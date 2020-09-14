@@ -8,7 +8,7 @@ public class MilesToKm {
         Scanner input = new Scanner(System.in);
         //store input
         double miles = input.nextDouble();
-        //show input
+        //show output
         System.out.println(miles +" miles is " + (miles*1.6) + " Kilometer");
     }
 }
