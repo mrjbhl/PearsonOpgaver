@@ -7,7 +7,7 @@ public class Refactor2Dansk {
         UdregnTid();
         FahTilCel();
         UdregnLaan();
-        ComputeChange();
+        UdregnSmaapenge();
 
     }
 
@@ -91,7 +91,7 @@ public class Refactor2Dansk {
         System.out.println("Den totale tilbagebetaling er KR" +
                 (int)(totalAfbetaling * 100) / 100.0);
     }
-    public static void ComputeChange() {
+    public static void UdregnSmaapenge() {
         // Lav Scanner
         Scanner input = new Scanner(System.in);
 
