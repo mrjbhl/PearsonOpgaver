@@ -1,38 +1,38 @@
 package Workshop;
 import java.util.Scanner;
 
-public class Refactor2 {
+public class Refactor2Dansk {
     public static void main(String[] args) {
         ShowCurrentTime();
-        DispTime();
-        FahToCel();
+        VisTid();
+        FahTilCel();
         ComputeLoan();
         ComputeChange();
 
-        }
-
-    public static void DispTime() {
-        Scanner input = new Scanner(System.in);
-        // Prompt the user for input
-        System.out.print("Enter an integer for seconds: ");
-        int seconds = input.nextInt();
-
-        int minutes = seconds / 60; // Find minutes in seconds
-        int remainingSeconds = seconds % 60; // Seconds remaining
-        System.out.println(seconds + " seconds is " + minutes +
-                " minutes and " + remainingSeconds + " seconds");
     }
 
-    public static void FahToCel() {
+    public static void VisTid() {
+        Scanner input = new Scanner(System.in);
+        // Spørg efter input
+        System.out.print("Skriv et heltal sekunder ");
+        int sekunder = input.nextInt();
+
+        int minutter = sekunder / 60; // Find minutter i sekunder
+        int SekunderTilbage = sekunder % 60; // sekunder tilbage
+        System.out.println(sekunder + " sekunder er " + minutter +
+                " minutter og " + SekunderTilbage + " sekunder");
+    }
+
+    public static void FahTilCel() {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a degree in Fahrenheit: ");
+        System.out.print("Skriv et antal grader Fahrenheit: ");
         double fahrenheit = input.nextDouble();
 
-        // Convert Fahrenheit to Celsius
+        // Converter Fahrenheit til Celsius
         double celsius = (5.0 / 9) * (fahrenheit - 32);
-        System.out.println("Fahrenheit " + fahrenheit + " is " +
-                celsius + " in Celsius");
+        System.out.println("Fahrenheit " + fahrenheit + " er lig med " +
+                celsius + " Celsius");
     }
     public static void ShowCurrentTime() {
         // Obtain the total milliseconds since midnight, Jan 1, 1970
@@ -130,5 +130,6 @@ public class Refactor2 {
         System.out.println("    " + numberOfPennies + " pennies");
     }
 }
+
 
 
