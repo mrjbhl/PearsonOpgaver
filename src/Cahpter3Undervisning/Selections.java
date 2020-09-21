@@ -33,6 +33,9 @@ public class Selections {
             case "green":
                 System.out.println("Offroad");
                 break;
+            case "blue":
+                System.out.println("Boat");
+                break;
             default:
                 System.out.println("Random Bil");
         }
